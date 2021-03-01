@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    overflow: hidden;
+    font-size: 1.8rem;
+    font-family: "Kumbh Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.body-top {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.body-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    transform: translate(50%, 50%);
+}
+
+/* card */
+
+.card {
+    position: relative;
+    z-index: 100;
+
+    background-color: white;
+    box-shadow: 0 0.1rem 10rem hsla(229, 23%, 23%, 0.596);
+
+    border-radius: 2rem;
+    margin: auto;
+    margin-bottom: 1rem;
+
+    display: grid;
+    grid-template-rows: 15rem 15rem 10rem;
+    width: 40rem;
+}
+
+/* card-header */
+
+.card-header {
+    background-image: url("./images/bg-pattern-card.svg");
+    border-radius: 2rem 2rem 0 0;
+}
+
+/* card-body */
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-description {
+    text-align: center;
+    transform: translateY(-4.6rem);
+}
+
+.card-description .card-description__main {
+    margin-top: 1rem;
+}
+
+.card-description .card-description__name {
+    font-weight: 700;
+    margin-right: 0.4rem;
+}
+
+.card-description .card-description__age {
+    color: hsl(227, 10%, 46%);
+}
+
+.card-description .card-description__city {
+    font-size: 1.6rem;
+    color: hsl(227, 10%, 46%);
+    margin-top: 1rem;
+}
+
+.img-card {
+    border-radius: 50%;
+    border: 1rem solid white;
+
+    transform: translateY(-4.6rem);
+}
+
+/* card-footer */
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-top: 1px solid hsl(0, 0%, 59%);
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.card__info .card__info__number {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.card__info .card__info__type {
+    color: hsl(227, 10%, 46%);
+    font-size: 1.4rem;
+}
