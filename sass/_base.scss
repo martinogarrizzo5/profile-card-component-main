@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+
+    @media (max-width: 37.5em) {
+        font-size: 55%;
+    }
+
+    @media (max-width: 31.25em) {
+        font-size: 50%;
+    }
+
+    @media (max-width: 21em) {
+        font-size: 40%;
+    }
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+
+    font-size: 1.8rem;
+    font-family: "Kumbh Sans", sans-serif;
+    box-sizing: border-box;
+}

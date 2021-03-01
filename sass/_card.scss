@@ -1,0 +1,92 @@
+/* card */
+.card {
+    position: relative;
+    z-index: 100;
+
+    background-color: white;
+    box-shadow: 0 0.1rem 10rem hsla(229, 23%, 23%, 0.596);
+
+    border-radius: 2rem;
+    margin: auto;
+    margin-bottom: 1rem;
+
+    display: grid;
+    grid-template-rows: 15rem 15rem 10rem;
+    width: 40rem;
+}
+
+/* card-header */
+
+.card-header {
+    background-image: url(../images/bg-pattern-card.svg);
+    background-size: cover;
+    border-radius: 2rem 2rem 0 0;
+}
+
+/* card-body */
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-description {
+    text-align: center;
+    transform: translateY(-4.6rem);
+
+    &__main {
+        margin-top: 1rem;
+    }
+
+    &__name {
+        font-weight: 700;
+        margin-right: 0.4rem;
+    }
+
+    &__age {
+        color: hsl(227, 10%, 46%);
+    }
+
+    &__city {
+        font-size: 1.6rem;
+        color: hsl(227, 10%, 46%);
+        margin-top: 1rem;
+    }
+}
+
+.img-card {
+    border-radius: 50%;
+    border: 1rem solid white;
+
+    transform: translateY(-4.6rem);
+}
+
+/* card-footer */
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-top: 1px solid hsl(0, 0%, 59%);
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    &__number {
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    &__type {
+        color: hsl(227, 10%, 46%);
+        font-size: 1.4rem;
+    }
+}
